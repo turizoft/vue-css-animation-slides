@@ -35,310 +35,497 @@
         </section>
 
         <section>
-          <section>
-            <h2>Conceptos</h2>
-          </section>
-          
-          <section>
-            <h2>Animaciones</h2>
-            <p>Una animación es la ilusión de movimiento que se crea al mostar una serie de imagénes de manera rápida y constante.</p>
-          </section>
-
-          <section>
-            <h2>Propiedades de una animación</h2>
-            <ul>
-              <li>Duración</li>
-              <li>Periodicidad</li>
-              <li>Frecuencia de actualización</li>
-              <li>Interpolación</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>¿Para qué?</h2>
-            <ul>
-              <li>Añadir interés visual</li>
-              <li>Generar interactividad</li>
-              <li>Mostrar relaciones y jerarquías</li>
-              <li>Transmitir estados e ideas</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>Ejemplos</h2>
-          </section>
-
-          <section>
-            <div class="grid" style="grid-template-areas:
-              'a a a a b c'
-              'a a a a b c'
-              'd d e e f f'
-              'd d e e f f';" 
-            >
-              <div style="grid-area: a;" class="fragment highlight-current-blue">
-                <video src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1DenoCsHNb_H1S1zErzmGCxhz6wjmdO8y%2F01-hierarchy-parentchild.mp4"></video>
-              </div>
-              <div style="grid-area: b;" class="fragment highlight-current-blue">
-                <video src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1G-MNFco8ApWpcnN5hkbiS2QnK1f1jW-Z%2F02-feedback-password.mp4"></video>
-              </div>
-              <div style="grid-area: c;" class="fragment highlight-current-blue">
-                <video src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1EYDzhOE6IR7AET2dU0stNl4vDpjcNQeJ%2F02-feedback-loading.mp4"></video>
-              </div>
-              <div style="grid-area: d;" class="fragment highlight-current-blue">
-                <video src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1Dd6n1D56cCcbtKEoM0gxP3OsMKotlTn2%2F01-hierarchy-menu.mp4"></video>
-              </div>
-              <div style="grid-area: e;" class="fragment highlight-current-blue">
-                <video src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1-vTVdejaFg4b2zIKKii4rrIP-yWwVbjI%2F01-hierarchy-peer.mp4"></video>
-              </div>
-              <div style="grid-area: f;" class="fragment highlight-current-blue">
-                <video src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F11YQJCcOncFpVNUXKmmTgvXb9MrlXt60c%2F02-feedback-touch.mp4"></video>
-              </div>
-            </div>
-          </section>
+          <h2>Animaciones</h2>
+          <p>Una animación es la ilusión de movimiento que se crea al mostar una serie de imagénes de manera rápida y constante.</p>
         </section>
 
         <section>
-          <section>
-            <h2>Animaciones en CSS</h2>
-            <p>
-              <ul>
-                <li>
-                  <b>Animaciones:</b>
-                  <ul>
-                    <li>Pueden correr una o más veces.</li>
-                    <li>Empiezan automaticamente por lo general.</li>
-                    <li>Mayor control, más trabajo crearlas.</li>
-                  </ul>
-                </li>
-                <li>
-                  <b>Transiciones:</b>
-                  <ul>
-                    <li>Corren solo una vez.</li>
-                    <li>Se disparan mediante eventos generalmente.</li>
-                    <li>Mejor interacción con JavaScript.</li>
-                  </ul>
-                </li>
-              </ul>
-            </p>
-          </section>
-          
-          <section>
-            <h2>Animaciones</h2>
-            <h3>Creacion de keyframes</h3>
-            <pre>
-              <code class="hljs floating-comments">
-/*regla @keyframes*/           /*nombre que llevará la animación*/ 
-@keyframes background-change {
-    /*1er keyframe*/       /*nombre de la propiedad que se animará*/
-    0%   { width: red; }
-    /*2do keyframe*/
-    50%  { background-color: yellow; }
-    /*3er keyframe*/
-    100% { background-color: red; }
-}
-              </code>
-            </pre>
-          </section>
-
-          <section>
-            <h2>Animaciones</h2>
-            <h3>Shorthand <pre class="inline">from</pre> y <pre class="inline">to</pre> para <pre class="inline">@keyframes</pre></h3>
-            <pre>
-              <code class="hljs floating-comments">
-@keyframes background-change {
-    /*equivale a 0%*/
-    from { background-color: red; }
-    /*equivale a 100%*/
-    to   { background-color: green; }
-}
-              </code>
-            </pre>
-          </section>
-
-          <section>
-            <h2>Animaciones</h2>
-            <h3>Uso de keyframes</h3>
-            <pre>
-              <code class="hljs floating-comments">
-div {
-    /*describe la animación a usar*/                /*definida en el ejemplo anterior*/
-    animation-name: background-change;
-    /*cuánto tardará en completar*/
-    animation-duration: 0s;
-    /*cuánto tardará en empezar*/
-    animation-delay: 0s;
-}
-              </code>
-            </pre>
-          </section>
-
-          <section>
-            <h2>Animaciones</h2>
-            <h3>Ejemplo #1</h3>
-            <p 
-              data-height="400" 
-              data-theme-id="light"
-              data-slug-hash="rZexeK"
-              data-default-tab="css,result"
-              data-user="turizoft"
-              data-pen-title="Animation Example 1"
-              class="codepen">
-            </p>
-          </section>
-
-          <section>
-            <h2>Animaciones</h2>
-            <h3>Otras propiedades (1)</h3>
-            <pre>
-              <code class="hljs floating-comments">
-div {
-    /*cuántas veces se repetirá*/                           /*numero o infinite*/
-    animation-iteration-count: 1;
-    /*tipo de interpolación*/                           /*representa un tipo de curva*/
-    animation-timing-function: ease;
-}
-              </code>
-            </pre>
-          </section>
-
-          <section>
-            <h2>Animaciones</h2>
-            <h3>Ejemplo #2</h3>
-            <p 
-              data-height="400" 
-              data-theme-id="light"
-              data-slug-hash="vzGLyE"
-              data-default-tab="css,result"
-              data-user="turizoft"
-              data-pen-title="Animation Example 2"
-              class="codepen">
-            </p>
-          </section>
-
-          <section>
-            <h2>Animaciones</h2>
-            <h3>Otras propiedades (2)</h3>
-            <pre>
-              <code class="hljs floating-comments">
-div {
-    /*dirección de la animación*/                     /*normal, reverse, alternate, alternalte-reverse*/
-    animation-direction: normal;
-    /*cómo se comporta antes y después de correr*/                     /*normal, backwards, forwards, both*/
-    animation-fill-mode: normal;
-    /*especifica el estado de la animación*/
-    animation-play-state: running;
-}
-              </code>
-            </pre>
-          </section>
-
-          <section>
-            <h2>Animaciones</h2>
-            <h3>Shorthand <pre class="inline">animation</pre></h3>
-            <pre>
-              <code class="hljs floating-comments">
-div {
-               /*nombre (@keyframes)*/                  /*duración*/
-    animation: change-background 300ms 
-               /* interpolación */            /* retraso */      /* conteo */      /* dirección*/
-               ease-in-out 500ms 12 backwards;
-}
-              </code>
-            </pre>
-          </section>
-
-          <section>
-            <h2>Animaciones</h2>
-            <h3>Ejemplo #3</h3>
-            <p 
-              data-height="400" 
-              data-theme-id="light"
-              data-slug-hash="yxOexx"
-              data-default-tab="css,result"
-              data-user="turizoft"
-              data-pen-title="Animation Example 3"
-              class="codepen">
-            </p>
-          </section>
-
-          <section>
-            <h2>Animaciones</h2>
-            <h3>Funciones de interpolación</h3>
-            <ul>
-              <li>Definen cómo transcurrirá una animación.</li>
-              <li>Predefinidos: <pre class="inline">linear</pre>, <pre class="inline">ease</pre>, <pre class="inline">ease-in</pre>, <pre class="inline">ease-out</pre>, <pre class="inline">ease-in-out</pre></li>
-              <li>Manuales: <pre class="inline">cubic-bezier</pre>, <pre class="inline">steps (step-start, step-end)</pre></li>
-            </ul>
-          </section>
-
-          <section>
-            <div class="grid" style="grid-template-areas:
-              'a a b b b b'
-              'a a b b b b'
-              'c c c c c c'
-              'c c c c c c';" 
-            >
-              <div style="grid-area: a;">
-                <div class="contained-image" style="background-size: 180%; background-image: url(https://css-tricks.com/wp-content/uploads/2017/09/graph_easeinout.svg)"></div>
-              </div>
-              <div style="grid-area: b;">
-                <div class="contained-image" style="background-size: 90%; background-image: url(https://css-tricks.com/wp-content/uploads/2017/09/graph_easein_easeout.svg)"/></div>
-              </div>
-              <div style="grid-area: c;">
-                <div class="contained-image" style="background-size: 70%; background-image: url(https://css-tricks.com/wp-content/uploads/2017/09/graph_sin_to_easeinout_0.svg)"/></div>
-              </div>
-            </div>
-          </section>
-
-          <section>
-            <h2>Animaciones</h2>
-            <h3>Ejemplo #4</h3>
-            <p 
-              data-height="400" 
-              data-theme-id="light"
-              data-slug-hash="KxzMOm"
-              data-default-tab="css,result"
-              data-user="turizoft"
-              data-pen-title="Animation Example 4"
-              class="codepen">
-            </p>
-          </section>
-
-          <section>
-            <h2>Animaciones</h2>
-            <h3>Propiedades <pre class="inline">steps</pre>, <pre class="inline">step-start</pre>, <pre class="inline">step-end</pre></h3>
-            <pre>
-              <code class="hljs floating-comments">
-div {
-               /*animación*/       /*duración*/            /*intervalos*/       /*dirección*/
-    animation: rotate 300ms steps(5, start);
-                            /*equivale a steps(1, start)*/
-    animation: rotate 300ms step-start;
-                            /*equivale a steps(1, end)*/
-    animation: rotate 300ms step-end;
-    
-}
-              </code>
-            </pre>
-          </section>
-
-          <section>
-            <h2>Animaciones</h2>
-            <h3>Ejemplo #5</h3>
-            <p 
-              data-height="400" 
-              data-theme-id="light"
-              data-slug-hash="WgwGJX"
-              data-default-tab="css,result"
-              data-user="turizoft"
-              data-pen-title="Animation Example 5"
-              class="codepen">
-            </p>
-          </section>
+          <h2>Propiedades de una animación</h2>
+          <ul>
+            <li>Duración</li>
+            <li>Periodicidad</li>
+            <li>Frecuencia de actualización</li>
+            <li>Interpolación</li>
+          </ul>
         </section>
 
-				<section>Slide 2</section>
-			</div>
+        <section>
+          <h2>¿Para qué?</h2>
+          <ul>
+            <li>Añadir interés visual</li>
+            <li>Generar interactividad</li>
+            <li>Mostrar relaciones y jerarquías</li>
+            <li>Transmitir estados e ideas</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Ejemplos</h2>
+        </section>
+
+        <section>
+          <div class="grid" style="grid-template-areas:
+            'a a a a b c'
+            'a a a a b c'
+            'd d e e f f'
+            'd d e e f f';" 
+          >
+            <div style="grid-area: a;" class="fragment highlight-current-blue">
+              <video src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1DenoCsHNb_H1S1zErzmGCxhz6wjmdO8y%2F01-hierarchy-parentchild.mp4"></video>
+            </div>
+            <div style="grid-area: b;" class="fragment highlight-current-blue">
+              <video src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1G-MNFco8ApWpcnN5hkbiS2QnK1f1jW-Z%2F02-feedback-password.mp4"></video>
+            </div>
+            <div style="grid-area: c;" class="fragment highlight-current-blue">
+              <video src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1EYDzhOE6IR7AET2dU0stNl4vDpjcNQeJ%2F02-feedback-loading.mp4"></video>
+            </div>
+            <div style="grid-area: d;" class="fragment highlight-current-blue">
+              <video src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1Dd6n1D56cCcbtKEoM0gxP3OsMKotlTn2%2F01-hierarchy-menu.mp4"></video>
+            </div>
+            <div style="grid-area: e;" class="fragment highlight-current-blue">
+              <video src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1-vTVdejaFg4b2zIKKii4rrIP-yWwVbjI%2F01-hierarchy-peer.mp4"></video>
+            </div>
+            <div style="grid-area: f;" class="fragment highlight-current-blue">
+              <video src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F11YQJCcOncFpVNUXKmmTgvXb9MrlXt60c%2F02-feedback-touch.mp4"></video>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Animaciones en CSS</h2>
+        </section>
+
+        <section>
+          <h2>Animaciones en CSS</h2>
+          <h3>Tipos de animaciones</h3>
+          <p>
+            <ul>
+              <li>
+                <b>Animaciones (<pre class="inline">animation</pre>, <pre class="inline">@keyframes</pre>):</b>
+                <ul>
+                  <li>Pueden correr una o más veces.</li>
+                  <li>Empiezan automaticamente por lo general.</li>
+                  <li>Mayor control, más trabajo crearlas.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Transiciones (<pre class="inline">transition</pre>):</b>
+                <ul>
+                  <li>Corren solo una vez.</li>
+                  <li>Empiezan mediante eventos o cambios de estado.</li>
+                  <li>Mejor interacción con JavaScript.</li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+        </section>
+        
+        <section>
+          <h2>Animaciones</h2>
+          <h3>Creacion de keyframes</h3>
+          <pre>
+            <code class="hljs floating-comments">
+/*regla @keyframes*/           /*nombre que llevará la animación*/ 
+@keyframes background-change {
+  /*1er keyframe*/       /*nombre de la propiedad que se animará*/
+  0%   { width: red; }
+  /*2do keyframe*/
+  50%  { background-color: yellow; }
+  /*3er keyframe*/
+  100% { background-color: red; }
+}
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Animaciones</h2>
+          <h3>Shorthand <pre class="inline">from</pre> y <pre class="inline">to</pre> para <pre class="inline">@keyframes</pre></h3>
+          <pre>
+            <code class="hljs floating-comments">
+@keyframes background-change {
+  /*equivale a 0%*/
+  from { background-color: red; }
+  /*equivale a 100%*/
+  to   { background-color: green; }
+}
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Animaciones</h2>
+          <h3>Uso de keyframes</h3>
+          <pre>
+            <code class="hljs floating-comments">
+div {
+  /*describe la animación a usar*/                /*definida en el ejemplo anterior*/
+  animation-name: background-change;
+  /*cuánto tardará en completar*/
+  animation-duration: 0s;
+  /*cuánto tardará en empezar*/
+  animation-delay: 0s;
+}
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Animaciones</h2>
+          <h3>Shorthand <pre class="inline">animation</pre></h3>
+          <pre>
+            <code class="hljs floating-comments">
+div {
+             /*nombre (@keyframes)*/                  /*duración*/
+  animation: change-background 300ms 
+             /* interpolación */            /* retraso */      /* conteo */      /* dirección*/
+             ease-in-out 500ms 12 backwards;
+}
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Animaciones</h2>
+          <h3>Ejemplo #1</h3>
+          <p 
+            data-height="400" 
+            data-theme-id="light"
+            data-slug-hash="rZexeK"
+            data-default-tab="css,result"
+            data-user="turizoft"
+            data-pen-title="Animation Example 1"
+            class="codepen">
+          </p>
+        </section>
+
+        <section>
+          <h2>Animaciones</h2>
+          <h3>Otras propiedades (1)</h3>
+          <pre>
+            <code class="hljs floating-comments">
+div {
+  /*cuántas veces se repetirá*/                           /*numero o "infinite"*/
+  animation-iteration-count: 1;
+  /*tipo de interpolación*/                           /*representa un tipo de curva*/
+  animation-timing-function: ease;
+}
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Animaciones</h2>
+          <h3>Ejemplo #2</h3>
+          <p 
+            data-height="400" 
+            data-theme-id="light"
+            data-slug-hash="vzGLyE"
+            data-default-tab="css,result"
+            data-user="turizoft"
+            data-pen-title="Animation Example 2"
+            class="codepen">
+          </p>
+        </section>
+
+        <section>
+          <h2>Animaciones</h2>
+          <h3>Otras propiedades (2)</h3>
+          <pre>
+            <code class="hljs floating-comments">
+div {
+  /*dirección de la animación*/                     /*normal, reverse, alternate, alternalte-reverse*/
+  animation-direction: normal;
+  /*cómo se comporta antes y después de correr*/                     /*normal, backwards, forwards, both*/
+  animation-fill-mode: normal;
+  /*especifica el estado de la animación*/
+  animation-play-state: running;
+}
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Animaciones</h2>
+          <h3>Ejemplo #3</h3>
+          <p 
+            data-height="400" 
+            data-theme-id="light"
+            data-slug-hash="yxOexx"
+            data-default-tab="css,result"
+            data-user="turizoft"
+            data-pen-title="Animation Example 3"
+            class="codepen">
+          </p>
+        </section>
+
+        <section>
+          <h2>Animaciones</h2>
+          <h3>Funciones de interpolación</h3>
+          <ul>
+            <li>Definen cómo transcurrirá una animación.</li>
+            <li>Predefinidos: <pre class="inline">linear</pre>, <pre class="inline">ease</pre>, <pre class="inline">ease-in</pre>, <pre class="inline">ease-out</pre>, <pre class="inline">ease-in-out</pre></li>
+            <li>Manuales:<pre class="inline">steps (step-start, step-end)</pre>, <pre class="inline">cubic-bezier</pre></li>
+          </ul>
+        </section>
+
+        <section>
+          <div class="grid" style="grid-template-areas:
+            'b a a a a c'
+            'b a a a a c'
+            'b a a a a c'
+            'b a a a a c';"
+          >
+            <div style="grid-area: a;">
+              <div class="contained-image" style="background-size: 80%; background-image: url(https://www.w3.org/TR/css-timing-1/curve-keywords.svg)"></div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="grid" style="grid-template-areas:
+            'a a a a a a'
+            'a a a a a a'
+            'a a a a a a'
+            'a a a a a a';"
+          >
+            <div style="grid-area: a;">
+              <div class="contained-image" style="background-size: 70%; background-image: url(https://css-tricks.com/wp-content/uploads/2017/09/graph_sin_to_easeinout_0.svg)"/></div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Animaciones</h2>
+          <h3>Ejemplo #4</h3>
+          <p 
+            data-height="400" 
+            data-theme-id="light"
+            data-slug-hash="KxzMOm"
+            data-default-tab="css,result"
+            data-user="turizoft"
+            data-pen-title="Animation Example 4"
+            class="codepen">
+          </p>
+        </section>
+
+        <section>
+          <h2>Animaciones</h2>
+          <h3>Funciones <pre class="inline">steps</pre>, <pre class="inline">step-start</pre>, <pre class="inline">step-end</pre></h3>
+          <pre>
+            <code class="hljs floating-comments">
+div {
+             /*animación*/       /*duración*/            /*intervalos*/       /*dirección*/
+  animation: rotate 300ms steps(5, start);
+                          /*equivale a steps(1, start)*/
+  animation: rotate 300ms step-start;
+                          /*equivale a steps(1, end)*/
+  animation: rotate 300ms step-end;
+  
+}
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <div class="grid" style="grid-template-areas:
+            'b a a a a c'
+            'b a a a a c'
+            'b a a a a c'
+            'b a a a a c';"
+          >
+            <div style="grid-area: a;">
+              <div class="contained-image" style="background-size: 70%; background-image: url(https://www.w3.org/TR/css-timing-1/step-timing-func-examples.svg)"></div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Animaciones</h2>
+          <h3>Ejemplo #5</h3>
+          <p 
+            data-height="400" 
+            data-theme-id="light"
+            data-slug-hash="WgwGJX"
+            data-default-tab="css,result"
+            data-user="turizoft"
+            data-pen-title="Animation Example 5"
+            class="codepen">
+          </p>
+        </section>
+
+        <section>
+          <h2>Animaciones</h2>
+          <h3>Función <pre class="inline">cubic-bezier</pre></h3>
+          <pre>
+            <code class="hljs floating-comments">
+div {
+    transition-timing-function: 
+      /*función*/             /*puntos de control*/
+      cubic-bezier(.38, -0.46, 0, .92); 
+}
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <div class="grid" style="grid-template-areas:
+            'b a a a a c'
+            'b a a a a c'
+            'b a a a a c'
+            'b a a a a c';"
+          >
+            <div style="grid-area: a;">
+              <div class="contained-image" style="background-size: 80%; background-image: url(https://www.w3.org/TR/css-timing-1/cubic-bezier-timing-curve.svg)"></div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Animaciones</h2>
+          <h3>Ejemplo #6</h3>
+          <p 
+            data-height="400" 
+            data-theme-id="light"
+            data-slug-hash="vzKyXy"
+            data-default-tab="css,result"
+            data-user="turizoft"
+            data-pen-title="Animation Example 6"
+            class="codepen">
+          </p>
+        </section>
+
+        <section>
+          <h2>Animaciones</h2>
+          <h3>Ejemplo #7</h3>
+          <p 
+            data-height="400" 
+            data-theme-id="light"
+            data-slug-hash="ZMOpGJ"
+            data-default-tab="css,result"
+            data-user="turizoft"
+            data-pen-title="Animation Example 7"
+            class="codepen">
+          </p>
+        </section>
+
+        <section>
+          <h2>Transiciones</h2>
+          <pre>
+            <code class="hljs floating-comments">
+div {
+                       /*propiedad que se interpolará o "all"*/
+  transition-property: background;
+                       /*duración de la animación*/
+  transition-duration: 2s;
+  background: red;
+}
+div:hover { background: blue; }
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Transiciones</h2>
+          <h3>Shorthand <pre class="inline">transition</pre></h3>
+          <pre>
+            <code class="hljs floating-comments">
+div {
+              /*propiedad*/           /*duración*/      /*interpolación*/       /*retraso*/
+  transition: background 300ms linear 1s;
+}
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Transiciones</h2>
+          <h3>Ejemplo #1</h3>
+          <p 
+            data-height="400" 
+            data-theme-id="light"
+            data-slug-hash="YOWwpo"
+            data-default-tab="css,result"
+            data-user="turizoft"
+            data-pen-title="Transition Example 1"
+            class="codepen">
+          </p>
+        </section>
+
+        <section>
+          <h2>Transiciones</h2>
+          <h3>Uso de funciones de interpolación</h3>
+          <pre>
+            <code class="hljs floating-comments">
+div {
+                       /*los mismos tipos que animation*/
+  transition: width 2s ease-out;
+  width: 100px;
+}
+div:hover { width: 100px; }
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Transiciones</h2>
+          <h3>Ejemplo #2</h3>
+          <p 
+            data-height="400" 
+            data-theme-id="light"
+            data-slug-hash="dqXGJB"
+            data-default-tab="css,result"
+            data-user="turizoft"
+            data-pen-title="Transition Example 1"
+            class="codepen">
+          </p>
+        </section>
+
+        <section>
+          <h2>Transiciones</h2>
+          <h3>Retraso en las transiciones</h3>
+          <pre>
+            <code class="hljs floating-comments">
+div {
+                    /*tiempo que tarda en iniciar*/
+  transition-delay: 1s;
+}
+
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Transiciones</h2>
+          <h3>Ejemplo #3</h3>
+          <p 
+            data-height="400" 
+            data-theme-id="light"
+            data-slug-hash="eLzZew"
+            data-default-tab="css,result"
+            data-user="turizoft"
+            data-pen-title="Transition Example 1"
+            class="codepen">
+          </p>
+        </section>
+
+        <!-- <section>
+          <h2>Demo</h2>
+        </section>
+
+        <section>
+          <p 
+            data-height="600" 
+            data-theme-id="light"
+            data-slug-hash="MBxNPx"
+            data-default-tab="result"
+            data-user="turizoft"
+            data-pen-title="Transition Example 1"
+            class="codepen">
+          </p>
+        </section> -->
+		  </div>
+    </div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
@@ -441,7 +628,7 @@ div {
         previewLinks: true,
 
         // Transition style
-        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
 
         // Transition speed
         transitionSpeed: 'slow', // default/fast/slow
